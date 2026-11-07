@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Jhennifer ♡</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #17152b, #302348, #512c58);
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#ffb8df 1px, transparent 1px);
+    background-size: 55px 55px, 90px 90px;
+    background-position: 0 0, 30px 40px;
+    opacity: .25;
+}
+
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    padding: 65px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: rgba(255,255,255,.075);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 25px;
+    padding: 35px 25px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 60px rgba(0,0,0,.3);
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(255,160,220,.15);
+    border: 1px solid rgba(255,160,220,.3);
+    color: #ffc5e8;
+    padding: 8px 17px;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(32px, 7vw, 53px);
+    color: #ffc7e9;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #ffc7e9;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+p {
+    color: #e8ddec;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.heart {
+    font-size: 65px;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+.divider {
+    width: 65px;
+    height: 3px;
+    background: #ed9bcf;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.section {
+    margin-top: 35px;
+    padding: 25px 20px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.055);
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.ship {
+    display: inline-block;
+    padding: 9px 14px;
+    margin: 5px;
+    border-radius: 20px;
+    background: rgba(232,148,204,.15);
+    border: 1px solid rgba(255,185,224,.2);
+    color: #ffd2ec;
+    font-size: 13px;
+}
+
+.highlight {
+    color: #ffb9e1;
+    font-weight: 800;
+}
+
+.final-question {
+    margin-top: 40px;
+    padding: 30px 15px;
+}
+
+.final-question h2 {
+    font-size: clamp(23px, 5vw, 32px);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    border: none;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+#yes {
+    background: linear-gradient(135deg, #ffaddb, #d889ff);
+    color: #321c3d;
+    box-shadow: 0 5px 25px rgba(232,137,217,.3);
+}
+
+#yes:hover {
+    transform: scale(1.08);
+}
+
+#no {
+    background: rgba(255,255,255,.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+#result {
+    display: none;
+    margin-top: 30px;
+    animation: appear .8s ease;
+}
+
+#result h2 {
+    font-size: 32px;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 12px;
+    color: #bba8c6;
+}
+
+.floating {
+    position: fixed;
+    bottom: -30px;
+    animation: floatUp 6s linear forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 500px) {
+    .container { padding: 30px 0; }
+    .card { padding: 30px 18px; }
+    .section { padding: 22px 15px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <main class="card">
+
+        <span class="tag">UM PEQUENO PEDIDO ESPECIAL</span>
+
+        <div class="heart">♡</div>
+
+        <h1>Oi, Jhennifer!</h1>
+
+        <p>
+            Eu poderia começar isso de várias maneiras,
+            mas achei melhor simplesmente começar dizendo
+            que você se tornou uma surpresa muito boa.
+        </p>
+
+        <div class="divider"></div>
+
+        <section class="section">
+
+            <h2>Capítulo 01 — Como tudo começou</h2>
+
+            <p>
+                Engraçado pensar que faz apenas um dia
+                que nos conhecemos pela internet.
+                Um dia, literalmente KKKKK.
+            </p>
+
+            <p style="margin-top:15px">
+                Ainda temos muita coisa para descobrir
+                um sobre o outro, muitas conversas pela frente
+                e provavelmente muitas risadas.
+            </p>
+
+            <p style="margin-top:15px">
+                Mas sabe o que é interessante?
+                Mesmo em tão pouco tempo, já encontramos
+                várias coisas em comum.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>Capítulo 02 — Nosso universo</h2>
+
+            <p>
+                Dois seres humanos que gostam de anime,
+                compartilham gostos parecidos e provavelmente
+                ainda vão passar horas conversando sobre
+                personagens, histórias e teorias.
+            </p>
+
+            <div style="margin-top:20px">
+                <span class="ship">Anime</span>
+                <span class="ship">Ships</span>
+                <span class="ship">Casais fictícios</span>
+                <span class="ship">Conversas aleatórias</span>
+                <span class="ship">Teorias absurdas</span>
+                <span class="ship">Momentos juntos</span>
+            </div>
+
+            <p style="margin-top:20px">
+                E convenhamos...
+                se a gente consegue torcer por tantos
+                casais de anime, por que não dar uma chance
+                para a nossa própria história?
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <h2>Capítulo 03 — Uma pequena confissão</h2>
+
+            <p>
+                Não vou dizer que já conheço cada detalhe
+                seu, porque seria mentira.
+            </p>
+
+            <p style="margin-top:15px">
+                Não vou dizer que sei como serão todos
+                os nossos dias, porque ainda vamos descobrir.
+            </p>
+
+            <p style="margin-top:15px">
+                Mas posso dizer que gostei de conhecer você.
+                Gostei de descobrir nossas semelhanças
+                e quero continuar descobrindo muito mais.
+            </p>
+
+            <p style="margin-top:15px">
+                Não quero apressar nossa história,
+                quero construir ela com você,
+                com carinho, respeito, sinceridade
+                e muitas risadas.
+            </p>
+
+        </section>
+
+        <div class="final-question">
+
+            <div class="heart">♡</div>
+
+            <h2>Então, Jhennifer...</h2>
+
+            <p style="margin-top:15px">
+                Que tal começarmos nossa própria história,
+                em vez de apenas assistir às histórias
+                dos nossos casais favoritos?
+            </p>
+
+            <h2 style="margin-top:25px">
+                Você aceita namorar comigo?
+            </h2>
+
+            <div class="buttons">
+                <button id="yes" onclick="accepted()">
+                    SIM! ♡
+                </button>
+
+                <button id="no" onclick="notYet()">
+                    Deixa eu pensar...
+                </button>
+            </div>
+
+            <div id="result">
+
+                <div class="divider"></div>
+
+                <h2>AAAAAAAAA! ♡</h2>
+
+                <p>
+                    ENTÃO É OFICIAL!
+                </p>
+
+                <p style="margin-top:15px">
+                    Nosso primeiro capítulo acaba de começar.
+                    Que essa seja uma história cheia de carinho,
+                    companheirismo, respeito e momentos incríveis.
+                </p>
+
+                <div class="heart">♥</div>
+
+                <p class="highlight">
+                    Com carinho, para minha futura
+                    companheira de aventuras.
+                </p>
+
+                <p style="margin-top:15px">
+                    E agora temos nosso próprio ship. KKKKK
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        Feito especialmente para Jhennifer ♡
+        <br>
+        Um dia de história, muitos capítulos pela frente.
+    </footer>
+
+</div>
+
+<script>
+const EMAIL = "Jbrancosolares@gmail.com";
+
+async function accepted() {
+    const yes = document.getElementById("yes");
+    const no = document.getElementById("no");
+    const result = document.getElementById("result");
+
+    // A surpresa aparece imediatamente, mesmo se o e-mail falhar.
+    yes.disabled = true;
+    yes.style.display = "none";
+    no.style.display = "none";
+    result.style.display = "block";
+
+    for (let i = 0; i < 35; i++) {
+        setTimeout(createHeart, i * 100);
+    }
+
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+
+    const status = document.createElement("p");
+    status.id = "notificationStatus";
+    status.style.marginTop = "20px";
+    status.textContent = "Enviando uma notificação...";
+    result.appendChild(status);
+
+    try {
+        const response = await fetch(`https://formsubmit.co/ajax/${EMAIL}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                _subject: "ELA ACEITOU! - Pedido para Jhennifer",
+                nome: "Jhennifer",
+                resposta: "SIM! Ela aceitou o pedido de namoro!",
+                data: new Date().toLocaleString("pt-BR")
+            })
+        });
+
+        const raw = await response.text();
+        let data = {};
+
+        try {
+            data = JSON.parse(raw);
+        } catch {
+            throw new Error(raw || `Resposta HTTP ${response.status}`);
+        }
+
+        if (!response.ok || data.success === false || data.success === "false") {
+            throw new Error(data.message || `Resposta HTTP ${response.status}`);
+        }
+
+        status.textContent = "Notificação enviada! ♡";
+    } catch (error) {
+        console.error("Falha ao enviar notificação:", error);
+        status.textContent =
+            "Ela aceitou! ♡ (A notificação por e-mail não foi enviada.)";
+    }
+}
+
+// Botão NÃO: foge do mouse e do toque.
+const noButton = document.getElementById("no");
+
+function escapeButton() {
+    const margin = 12;
+    const maxX = Math.max(margin, window.innerWidth - noButton.offsetWidth - margin);
+    const maxY = Math.max(margin, window.innerHeight - noButton.offsetHeight - margin);
+
+    noButton.style.position = "fixed";
+    noButton.style.zIndex = "9999";
+    noButton.style.left = (margin + Math.random() * (maxX - margin)) + "px";
+    noButton.style.top = (margin + Math.random() * (maxY - margin)) + "px";
+}
+
+noButton.addEventListener("mouseenter", escapeButton);
+noButton.addEventListener("touchstart", function(event) {
+    event.preventDefault();
+    escapeButton();
+}, { passive: false });
+
+function notYet() {
+    escapeButton();
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "floating";
+    heart.textContent = ["♡", "♥", "✧", "🌸"][Math.floor(Math.random() * 4)];
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    heart.style.color = "#ffb9e1";
+
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+}
+</script>
+
+</body>
+</html>
